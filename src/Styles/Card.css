@@ -1,0 +1,29 @@
+.card__div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  margin: 1.5vw 0;
+}
+.card__div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5vw 3.2vw;
+}
+.card__div div p {
+  padding: 0.2vw;
+  font-size: 1.1vw;
+}
+@media screen and (max-width: 700px) {
+  .card__div {
+    margin: 1vw 0;
+  }
+  .card__div div {
+    padding: 2.5vw 4vw;
+  }
+  .card__div div p {
+    padding: 0;
+    font-size: 3vw;
+  }
+}

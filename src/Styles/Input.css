@@ -1,0 +1,75 @@
+.input__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input__div h1,
+.input__div button,
+input::placeholder {
+  color: white;
+}
+
+.input__div input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.4vw;
+  padding: 0.5vw 0.8vw;
+  width: 100%;
+}
+
+.input__div h1 {
+  font-size: 1.4vw;
+  padding-bottom: 0.2vw;
+}
+.input__div button {
+  font-size: 0.85vw;
+  padding: 0.6vw 1vw;
+  white-space: nowrap;
+  margin-left: 0.3vw;
+  @apply font-medium  rounded;
+  @apply bg-gray-700 text-white;
+}
+
+.input__div button:hover {
+  @apply bg-gray-900;
+}
+.input__div section,
+.input__div div,
+.input__div input,
+.input__div button {
+  box-sizing: border-box;
+}
+
+.input__div section {
+  width: 100%;
+  display: table;
+  padding: 1vw 0;
+}
+.input__div div {
+  display: table-cell;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .input__div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input__div h1 {
+    font-size: 2.7vw;
+    margin: 1vw 0;
+    padding: 0;
+  }
+  .input__div input {
+    width: 25vw;
+    padding: 0.5vw;
+    margin: 0;
+    font-size: 2.5vw;
+  }
+  .input__div button {
+    margin-left: 0.5vw;
+    padding: 0.9vw;
+    font-size: 2vw;
+  }
+}

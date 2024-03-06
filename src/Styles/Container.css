@@ -1,0 +1,15 @@
+.container__div {
+  width: 30%;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 2vw;
+  background-image: linear-gradient(to right, #6e13b4, #ff5ef2);
+  padding: 2vw;
+  margin: 2vw auto;
+}
+
+@media screen and (max-width: 700px) {
+  .container__div {
+    min-width: 50%;
+  }
+}

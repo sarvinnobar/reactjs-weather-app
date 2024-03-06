@@ -1,0 +1,30 @@
+.weatherInfo__p--desc {
+  font-size: 1.3vw;
+}
+.weatherInfo__div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 2vw;
+}
+.weatherInfo__div p {
+  padding: 0.2vw 0;
+}
+@media screen and (max-width: 700px) {
+  .weatherInfo__div {
+    justify-content: start;
+  }
+
+  .weatherInfo__div img {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+
+  .weatherInfo__div p {
+    font-size: 3.5vw;
+    padding: 0;
+  }
+}
